@@ -62,3 +62,7 @@ document.querySelector(".nota-actions").style.display = "block";
   // buka WhatsApp
   window.open(urlWA, "_blank");
 });
+
+function printNota(){
+  window.print();
+}
