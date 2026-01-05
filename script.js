@@ -18,6 +18,20 @@ Alamat      : ${alamat}
 💳 Pembayaran: QRIS (bukti terlampir)
 `;
 
+const buktiInput = document.getElementById("bukti");
+const preview = document.getElementById("preview");
+const statusBukti = document.getElementById("statusBukti");
+
+buktiInput.addEventListener("change", function(){
+  const file = this.files[0];
+  if(file){
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
+    statusBukti.innerHTML = "✅ Bukti pembayaran siap dikirim";
+  }
+});
+
+  
   const nomorWA = "6285229455301";
   const urlWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
 
