@@ -47,7 +47,16 @@
     <input type="text" id="produk" placeholder="Produk Pesanan" required>
     <input type="number" id="jumlah" placeholder="Jumlah" required>
     <textarea id="alamat" placeholder="Alamat Pengiriman"></textarea>
+    
+<h3>💳 Pembayaran (QRIS)</h3>
+<img src="assets/qris.png" class="qris">
+<p>Scan QR lalu upload bukti pembayaran</p>
 
+<input type="file" id="bukti" accept="image/*" required>
+<img id="preview" style="max-width:200px;display:none;margin-top:10px;">
+<p id="statusBukti"></p>
+
+    
 </section>
 
 <footer>
