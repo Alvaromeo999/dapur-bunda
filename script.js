@@ -14,8 +14,10 @@ Produk      : ${produk}
 Jumlah      : ${jumlah}
 Alamat      : ${alamat}
 
+💳 Pembayaran: QRIS
+📸 Bukti     : Dilampirkan via chat
+
 📍 Jalan Kepodang VII No.7
-💳 Pembayaran: QRIS (bukti terlampir)
 `;
 
 const buktiInput = document.getElementById("bukti");
