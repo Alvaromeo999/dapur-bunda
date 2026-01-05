@@ -38,14 +38,26 @@ buktiInput.addEventListener("change", function(){
   const urlWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
 
   // tampilkan nota di web
-  document.getElementById("nota").innerHTML = `
-    <h3>🧾 Nota Pesanan</h3>
+  const tanggal = new Date().toLocaleString("id-ID");
+
+document.getElementById("nota").innerHTML = `
+  <div class="nota-box">
+    <h2>DAPUR BUNDA</h2>
+    <p>Jalan Kepodang VII No.7<br>Wonogiri 57611</p>
+    <hr>
+
+    <p><b>Tanggal:</b> ${tanggal}</p>
     <p><b>Nama:</b> ${nama}</p>
     <p><b>Produk:</b> ${produk}</p>
     <p><b>Jumlah:</b> ${jumlah}</p>
-    <p><b>Status:</b> Menunggu konfirmasi admin</p>
-    <p>📲 Pesanan akan dikirim ke WhatsApp</p>
-  `;
+    <p><b>Pembayaran:</b> QRIS</p>
+
+    <hr>
+    <p>Status: <b>Menunggu Konfirmasi Admin</b></p>
+  </div>
+`;
+
+document.querySelector(".nota-actions").style.display = "block";
 
   // buka WhatsApp
   window.open(urlWA, "_blank");
