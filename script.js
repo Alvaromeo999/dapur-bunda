@@ -46,11 +46,10 @@ document.getElementById("nota").innerHTML = `
     <p>Jalan Kepodang VII No.7<br>Wonogiri 57611</p>
     <hr>
 
-    <p><b>Tanggal:</b> ${tanggal}</p>
-    <p><b>Nama:</b> ${nama}</p>
-    <p><b>Produk:</b> ${produk}</p>
-    <p><b>Jumlah:</b> ${jumlah}</p>
-    <p><b>Pembayaran:</b> QRIS</p>
+    <p><b>Harga Satuan:</b> Rp ${Number(harga).toLocaleString("id-ID")}</p>
+<p><b>Total Bayar:</b> <span style="color:green;font-size:18px">
+Rp ${Number(total).toLocaleString("id-ID")}
+</span></p>
 
     <hr>
     <p>Status: <b>Menunggu Konfirmasi Admin</b></p>
