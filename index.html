@@ -10,19 +10,42 @@
 <body>
 
 <header class="hero">
-  <img src="assets/logo-dapur-bunda.png" class="logo" alt="Dapur Bunda">
-  <h1>Dapur Bunda</h1>
-  <p>Snack & Kue Rumahan • Higienis • Halal</p>
-  <a href="#order" class="btn">🛒 Pesan Sekarang</a><br><br>
-  <img src="assets/logo-halal.png" class="halal" alt="Halal Indonesia">
+  <div class="hero-box">
+    <img src="assets/logo-dapur-bunda.png" class="logo" alt="Dapur Bunda">
+    <h1>Dapur Bunda</h1>
+    <p class="tagline">Snack & Kue Rumahan untuk Acara, Hajatan & Kebutuhan Harian</p>
+    <div class="hero-cta">
+      <a href="#order" class="btn primary">🛒 Pesan Sekarang</a>
+      <a href="https://wa.me/6285229455301" class="btn secondary">💬 WhatsApp</a>
+    </div>
+    <div class="hero-badge">
+      <img src="assets/logo-halal.png" alt="Halal">
+      <span>Halal • Higienis • Rumahan</span>
+    </div>
+  </div>
 </header>
 
-<section>
-  <h2>🍰 Aneka Produk</h2>
-  <ul class="grid">
-    <li>Puding Lumut</li><li>Aneka Bolu</li><li>Aneka Kue Kering</li>
-    <li>Snack Box</li><li>Tape Ketan</li><li>Madu</li>
-    <li>Emping</li><li>Kacang Mete</li>
+<section class="produk">
+  <h2>🍰 Produk Unggulan</h2>
+  <div class="produk-grid">
+    <div class="card">Puding Lumut</div>
+    <div class="card">Aneka Bolu</div>
+    <div class="card">Kue Kering</div>
+    <div class="card">Snack Box</div>
+    <div class="card">Tape Ketan</div>
+    <div class="card">Madu</div>
+    <div class="card">Emping</div>
+    <div class="card">Kacang Mete</div>
+  </div>
+</section>
+
+<section class="trust">
+  <h2>Kenapa Pilih Dapur Bunda?</h2>
+  <ul>
+    <li>✅ Halal & Higienis</li>
+    <li>✅ Produksi Rumahan Terpercaya</li>
+    <li>✅ Bisa Pesan untuk Acara & Hajatan</li>
+    <li>✅ Lokasi Jelas di Wonogiri</li>
   </ul>
 </section>
 
@@ -33,7 +56,7 @@
     <input id="produk" placeholder="Produk" required>
     <input id="jumlah" type="number" placeholder="Jumlah" required>
     <input id="harga" type="number" placeholder="Harga Satuan (Rp)" required>
-    <textarea id="alamat" placeholder="Alamat"></textarea>
+    <textarea id="alamat" placeholder="Alamat Pengiriman"></textarea>
     <button type="submit">Kirim via WhatsApp</button>
   </form>
   <div id="nota"></div>
@@ -42,12 +65,7 @@
   </div>
 </section>
 
-<section>
-  <h2>💳 Pembayaran QRIS</h2>
-  <img src="assets/qris.png" class="qris">
-</section>
-
-<section>
+<section class="alamat">
   <h2>📍 Alamat</h2>
   <p>Jalan Kepodang VII No. 7, Sukorejo, Giritirto, Wonogiri 57611</p>
 </section>

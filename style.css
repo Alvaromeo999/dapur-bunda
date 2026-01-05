@@ -1,14 +1,21 @@
-body{font-family:Arial;margin:0;background:#fffaf5}
-.hero{text-align:center;padding:40px;background:linear-gradient(135deg,#ff7b54,#ffb26b);color:#fff}
+body{font-family:Arial;margin:0;background:#fffaf5;color:#333}
+.hero{background:linear-gradient(135deg,#ff7b54,#ffb26b);color:#fff;padding:60px 20px;text-align:center}
+.hero-box{max-width:720px;margin:auto}
 .logo{width:140px}
-.halal{width:90px;margin-top:10px}
-section{padding:30px;max-width:900px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
-.grid li{background:#fff;padding:10px;border-radius:8px;list-style:none}
-.btn{background:#25D366;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold}
-.order{background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.1)}
-form input,textarea,button{width:100%;padding:12px;margin:8px 0}
-button{background:#ff7b54;color:#fff;border:none;border-radius:6px}
-.qris{max-width:200px}
-.wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;font-size:26px;padding:14px;border-radius:50%;text-decoration:none}
-#nota{background:#e6ffe6;padding:15px;margin-top:20px;border-radius:8px}
+.tagline{font-size:18px;margin:15px 0 25px}
+.hero-cta .btn{margin:5px}
+.hero-badge{margin-top:20px;display:flex;justify-content:center;align-items:center;gap:10px;font-weight:bold}
+.hero-badge img{width:70px}
+section{padding:40px 20px;max-width:1000px;margin:auto}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:bold}
+.btn.primary{background:#25D366;color:#fff}
+.btn.secondary{background:#fff;color:#ff7b54}
+.produk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:14px;box-shadow:0 6px 16px rgba(0,0,0,.1);font-weight:bold;text-align:center}
+.trust ul{list-style:none;padding:0;font-size:17px}
+.trust li{padding:8px 0}
+.order{background:#fff;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.12)}
+form input,textarea,button{width:100%;padding:14px;margin:10px 0;font-size:15px}
+button{background:#ff7b54;color:#fff;border:none;border-radius:8px;font-weight:bold}
+#nota{background:#e6ffe6;padding:15px;border-radius:10px;margin-top:15px}
+.wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;font-size:26px;padding:16px;border-radius:50%;text-decoration:none;box-shadow:0 6px 14px rgba(0,0,0,.3)}
