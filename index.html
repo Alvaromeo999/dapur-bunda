@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dapur Bunda | Pesanan Makanan Rumahan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dapur Bunda Wonogiri - Puding Lumut, Bolu, Kue Kering, Snack Box, Tape Ketan, Madu, Emping, Kacang Mete dan lainnya">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img src="assets/logo-dapur-bunda.png" class="logo">
+  <h1>Dapur Bunda</h1>
+  <p>Masakan Rumahan • Higienis • Halal</p>
+  <img src="assets/logo-halal.png" class="halal">
+</header>
+
+<section class="info">
+  <h2>📍 Alamat</h2>
+  <p>Jalan Kepodang VII No. 7, Sukorejo, Giritirto, Wonogiri 57611</p>
+
+  <h2>📞 WhatsApp</h2>
+  <a href="https://wa.me/6285229455301" class="btn">0852-2945-5301</a>
+</section>
+
+<section class="produk">
+  <h2>🍰 Aneka Produk</h2>
+  <ul>
+    <li>Puding Lumut</li>
+    <li>Aneka Bolu</li>
+    <li>Aneka Kue Kering</li>
+    <li>Snack Box</li>
+    <li>Tape Ketan</li>
+    <li>Madu</li>
+    <li>Emping</li>
+    <li>Kacang Mete</li>
+    <li>DLL</li>
+  </ul>
+</section>
+
+<section class="order">
+  <h2>📝 Formulir Pemesanan</h2>
+
+  <form id="orderForm">
+    <input type="text" id="nama" placeholder="Nama Pemesan" required>
+    <input type="text" id="produk" placeholder="Produk Pesanan" required>
+    <input type="number" id="jumlah" placeholder="Jumlah" required>
+    <textarea id="alamat" placeholder="Alamat Pengiriman"></textarea>
+
+    <h3>💳 Pembayaran (QRIS)</h3>
+    <img src="assets/qris.png" class="qris">
+    <p>Scan QR lalu upload bukti pembayaran</p>
+
+    <input type="file" id="bukti" required>
+
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+
+  <div id="nota"></div>
+</section>
+
+<footer>
+  <p>© 2026 Dapur Bunda – Wonogiri</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
