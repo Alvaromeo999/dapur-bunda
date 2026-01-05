@@ -59,6 +59,9 @@ document.getElementById("nota").innerHTML = `
 
 document.querySelector(".nota-actions").style.display = "block";
 
+const harga = document.getElementById("harga").value;
+const total = harga * jumlah;
+  
   // buka WhatsApp
   window.open(urlWA, "_blank");
 });
