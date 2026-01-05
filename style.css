@@ -1,13 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #fffaf5;
   color: #333;
+  line-height: 1.6;
 }
 
 .hero {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
   background: linear-gradient(135deg, #ff7b54, #ffb26b);
   color: white;
 }
@@ -22,12 +27,31 @@ body {
 }
 
 section {
-  padding: 30px;
+  padding: 30px 20px;
   max-width: 900px;
   margin: auto;
 }
 
+/* INFO & BUTTON */
+.btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* PRODUK */
 .produk ul {
+  list-style: none;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   gap: 10px;
@@ -35,15 +59,32 @@ section {
 
 .produk li {
   background: #fff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  text-align: center;
 }
 
-form input, textarea, button {
+/* ORDER FORM */
+.order {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  margin-bottom: 40px;
+}
+
+form input,
+form textarea,
+form button {
   width: 100%;
   padding: 12px;
-  margin: 8px 0;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  resize: vertical;
 }
 
 button {
@@ -52,26 +93,37 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
+/* QRIS */
 .qris {
   max-width: 200px;
   display: block;
-  margin: 10px 0;
+  margin: 15px auto;
 }
 
+/* MAPS */
+.maps iframe {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* NOTA */
 #nota {
-  background: #e6ffe6;
-  padding: 15px;
   margin-top: 20px;
-  border-radius: 8px;
 }
 
 .nota-box {
   background: #ffffff;
   border: 2px dashed #4CAF50;
   padding: 20px;
-  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .nota-actions button {
@@ -79,6 +131,15 @@ button {
   margin-top: 10px;
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f2f2f2;
+  font-size: 14px;
+}
+
+/* PRINT */
 @media print {
   body * {
     visibility: hidden;
