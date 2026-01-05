@@ -12,13 +12,15 @@ document.getElementById("orderForm").addEventListener("submit", function(e){
 Nama        : ${nama}
 Produk      : ${produk}
 Jumlah      : ${jumlah}
-Alamat      : ${alamat}
+Harga       : Rp ${Number(harga).toLocaleString("id-ID")}
+Total Bayar : Rp ${Number(total).toLocaleString("id-ID")}
 
 💳 Pembayaran: QRIS
 📸 Bukti     : Dilampirkan via chat
 
 📍 Jalan Kepodang VII No.7
 `;
+
 
 const buktiInput = document.getElementById("bukti");
 const preview = document.getElementById("preview");
