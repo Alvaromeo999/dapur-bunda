@@ -50,3 +50,30 @@ buktiInput.addEventListener("change", function(){
   // buka WhatsApp
   window.open(urlWA, "_blank");
 });
+
+.nota-box {
+  background: #ffffff;
+  border: 2px dashed #4CAF50;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.nota-actions button {
+  background: #4CAF50;
+  margin-top: 10px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #nota, #nota * {
+    visibility: visible;
+  }
+  #nota {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
