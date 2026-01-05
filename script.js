@@ -39,6 +39,8 @@ buktiInput.addEventListener("change", function(){
   const nomorWA = "6285229455301";
   const urlWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
 
+<p><b>Kode Order:</b> ${kodeOrder}</p>
+  
   // tampilkan nota di web
   const tanggal = new Date().toLocaleString("id-ID");
 
@@ -70,3 +72,6 @@ const total = harga * jumlah;
 function printNota(){
   window.print();
 }
+
+const kodeOrder = "DB-" + Date.now().toString().slice(-6);
+
